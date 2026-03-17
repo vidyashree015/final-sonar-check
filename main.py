@@ -17,7 +17,7 @@ def main():
     # 4. FIX: Handling a specific error instead of a bare 'except' (Reliability improved)
     try:
         with open("non_existent_file.txt", "r") as f:
-            content = f.read()
+            
     except FileNotFoundError:
         print("Note: Optional file not found, moving on.")
 
